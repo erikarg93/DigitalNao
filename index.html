@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Caroline Sada</title>
+</head>
+
+<body>
+    <header>
+        <h1>Caroline Sada: Empoderando tus Finanzas</h1>
+    </header>
+
+
+    <div class="main-content">
+        
+        <h2>Finanzas Personales</h2>
+        <p>Bienvenidos a una charla inspiradora sobre cómo tomar el control de tus finanzas con consejos de una experta
+            en el campo y una influyente en el mundo de las finanzas personales.</p>
+        <p>Una mujer exitosa y confiada manejando sus finanzas.</p>
+        <p>Registrate para recibir consejos exclusivos de Caroline Sada e información que te será de mucha ayuda para el manejo de tus finanzas personales.</p>
+        <img src="C:\Users\Usuario\Desktop\Digital NAO\DigitalNao\css" alt="Imagen 1" >
+        
+        <div class="form-container">
+            <form id="myForm">
+                <label for="firstName">Nombre:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Apellidos:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" required>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Soluciones Creativas. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Array para almacenar los datos del formulario
+        var formDataArray = [];
+
+        // JavaScript para manejar el formulario y guardar los datos en un arreglo
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evitar que el formulario se envíe de forma predeterminada
+
+            // Obtener los valores del formulario
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var email = document.getElementById("email").value;
+
+            // Crear un objeto con los datos del formulario
+            var formData = {
+                firstName: firstName,
+                lastName: lastName,
+                email: email
+            };
+
+            // Agregar el objeto al array
+            formDataArray.push(formData);
+
+            // Mostrar los datos en la consola (para fines de demostración)
+            console.log(formData);
+        });
+    </script>
+
+
+</body>
+
+</html>
+
